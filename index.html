@@ -34,7 +34,11 @@
         </div>
       </div>
     </div>
-
+    <!--  1. По заданию названия, цены и оценка должна храниться в виде констант,
+          но храниться где? в файле js? и тогда на этих местах должны быть ссылки на эти консты.
+          2. Нельзя ли как-то один раз прописать блок с товаром, а потом просто на него ссылаться или типо того? 
+          просто дублировать так вот каждый раз это какой-то кал. Хотя я почекал как аналогичная тема сделана,
+          например, у Apple - там так же копируют каждый раз-->
     <section class="products">
       <div class="container">
         <div class="products-title">Наушники</div>
@@ -43,6 +47,7 @@
             <div class="product-item-image">
               <img src="images/Image-2.png" alt="Apple BYZ S852I" />
             </div>
+
             <div class="product-item-info">
               <div class="product-item-name">Apple BYZ S852I</div>
               <div class="product-item-price">2927 ₽</div>
@@ -200,7 +205,7 @@
             </a>
           </div>
           <div class="footer-center">
-            <nav class="menu">
+            <nav class="menu-left">
               <ul class="menu-list">
                 <li class="menu-item">
                   <a href="#">Избранное</a>
@@ -211,10 +216,14 @@
                 <li class="menu-item">
                   <a href="#">Контакты</a>
                 </li>
+              </ul>
+            </nav>
+            <nav class="menu-right">
+              <ul class="menu-list">
                 <li class="menu-item">
                   <a href="#">Условия сервиса</a>
                 </li>
-                <li class="menu-item">
+                <li class="menu-lang">
                   <img src="/images/RU.png" alt="Язык" />
                   <a href="#">Рус</a
                   ><!--Не уверен что выбор языка сайта выполняется ссылками: мы же не на новый сайт переходим-->

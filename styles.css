@@ -7,6 +7,10 @@ body {
 p {
   margin: 0;
 }
+ul {
+  margin: 0;
+  padding: 0;
+}
 a {
   text-decoration: none;
   color: #101010;
@@ -16,6 +20,8 @@ a {
   margin: 0 auto;
   padding: 0;
 }
+
+/* Header START */
 .header-row {
   display: flex;
   align-items: center;
@@ -31,6 +37,8 @@ a {
   column-gap: 45px;
   align-items: center;
 }
+/* Header END */
+/* Main START */
 .products-title {
   color: #838383;
   font-size: 20px;
@@ -90,8 +98,11 @@ a {
   width: 220px;
   height: 237px;
 }
+/* Main END */
+
 /* Здесь можно наверно (даже нужно) наследовать свойства из других классов
-но в CSS это не предусмотрено, я хз как */
+но в CSS это не предусмотрено, скорее всего с помощью scss */
+/* Footer START */
 .footer {
   background-color: white;
   max-width: 1100px;
@@ -100,12 +111,11 @@ a {
 }
 .footer-row {
   display: flex;
-  margin: 0 auto;
 }
 .footer-right {
   display: flex;
   align-items: center;
-  margin: 0 auto;
+  margin: 29px 27px 90px 183px;
   column-gap: 18px;
 }
 .footer-left {
@@ -115,7 +125,18 @@ a {
 }
 .footer-center {
   margin: 30px 0 0 0;
+  display: flex;
 }
 .menu-list {
+  display: grid;
   list-style-type: none;
+  gap: 10px;
+}
+.menu-right {
+  margin-left: 174px;
+}
+.menu-lang {
+  margin-top: 25px;
+  display: flex;
+  column-gap: 17px;
 }
