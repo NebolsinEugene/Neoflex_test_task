@@ -62,7 +62,7 @@ a:hover {
   height: 407px;
   width: 350px;
   background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
   border-radius: 30px;
   align-items: center;
 }
@@ -118,20 +118,21 @@ a:hover {
 }
 .footer-row {
   display: flex;
+  justify-content: space-between;
+  padding: 30px;
 }
-.footer-right {
+.footer-social {
   display: flex;
   align-items: center;
-  margin: 29px 27px 90px 183px;
   column-gap: 18px;
+  max-height: 35px;
 }
-.footer-left {
+.footer-logo {
   font-weight: bold;
   font-size: 25px;
-  margin: 29px 233px 90px 29px;
 }
-.footer-center {
-  margin: 30px 0 0 0;
+.footer-nav {
+  margin: 0;
   display: flex;
 }
 .menu-list {
