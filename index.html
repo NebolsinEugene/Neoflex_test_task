@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/style/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="/js/index.js" type="module" defer></script>
     <title>QPICK</title>
   </head>
 
@@ -18,7 +19,7 @@
       <div class="container">
         <div class="header-row">
           <div class="header-left">
-            <a href="#">
+            <a href="/index.html">
               <p>QPICK</p>
             </a>
           </div>
@@ -27,19 +28,29 @@
             <a href="#">
               <img src="images/heart.svg" alt="Избранное" />
             </a>
-            <a href="#">
+            <a href="/basket.html">
               <img src="images/shopping_cart.svg" alt="Корзина" />
+              <div class="basket__inner">
+                <span class="basket__count">0</span>
+              </div>
             </a>
           </div>
         </div>
       </div>
     </div>
+
     <!--  1. По заданию названия, цены и оценка должна храниться в виде констант,
           но храниться где? в файле js? и тогда на этих местах должны быть ссылки на эти консты.
           2. Нельзя ли как-то один раз прописать блок с товаром, а потом просто на него ссылаться или типо того? 
           просто дублировать так вот каждый раз это какой-то кал. Хотя я почекал как аналогичная тема сделана,
           например, у Apple - там так же копируют каждый раз-->
-    <section class="products">
+
+    <div class="container">
+      <h1>Товары нашего магазина</h1>
+      <div class="cards"></div>
+    </div>
+
+    <!--<section class="products">
       <div class="container">
         <div class="products-title">Наушники</div>
         <div class="products-items">
@@ -194,7 +205,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section>-->
 
     <footer class="footer">
       <div class="container">
